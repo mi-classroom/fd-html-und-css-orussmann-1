@@ -79,11 +79,14 @@
     --logo-footer-color: var(--color-white);
     --icon-color: var(--color-primary-default);
     --base-text-color: var(--color-black);
+    --base-background-color: var(--color-white);
+    --border-color: var(var(--color-primary-default));
     --footer-text-color: var(--color-white);
     --separator-color: var(--color-neutral-400);
-    --card-color: var(--color-neutral-400);
+    --card-color: var(--color-neutral-200);
     --card-side-strip-color: var(--color-primary-default);
     --footer-background-color: var(--color-neutral-900);
+    --footer-text-color: var(--color-white);
     --intra-page-nav-marked-color: var(--color-primary-default);
     --intra-page-nav-unmarked-color: var(--color-neutral-400);
 

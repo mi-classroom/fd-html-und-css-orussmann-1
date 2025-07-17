@@ -1,60 +1,91 @@
+/* Header
+############################################################################ */
+
 /* Artist Info Block
 ############################################################################ */
 .artist-info-block {
-    
-    &  h2, h3 {
-      font: var(--font-heading-m);
-    }
-    
-    & p, li {
-        font: var(--font-body-m-light);
-    }
+  & h2,
+  h3 {
+    font: var(--font-heading-m);
+  }
+
+  & p,
+  li {
+    font: var(--font-body-m-light);
+  }
 }
 
 /* Artist Short Info
 ############################################################################ */
-.artist-short-info  h3 {
+.artist-short-info {
+  & h3 {
     font: var(--font-heading-s-regular);
+  }
+
+  & .text {
+    border-left: var(--border-width-l) var(--color-primary-default) solid;
+  }
+
+  background-color: var(--card-color);
 }
 
 /* Image with Info
 ############################################################################ */
 .artwork-card {
-    font: var(--font-body-s-light)
+  font: var(--font-body-s-light);
+  & .text {
+    background-color: var(--card-color);
+  }
 }
 
 /* Artist CV
 ############################################################################ */
 .artist-cv {
-    & h3 {
-        font: var(--font-heading-s-regular);
-    }
+  & h3 {
+    font: var(--font-heading-s-regular);
+  }
 
-    & tr td:first-child {
-        font: var(--font-body-m-regular);
-    }
+  & table {
+    border-collapse: collapse;
+  }
 
-    & tr td:last-child {
-        font: var(--font-body-m-light);
-    }
+  & tr td:first-child {
+    font: var(--font-body-m-regular);
+  }
+
+  & tr td:last-child {
+    font: var(--font-body-m-light);
+  }
+
+  & tr {
+    border-bottom: var(--border-width-s) var(--separator-color) solid;
+  }
 }
 
 /* Sidebar Navigation
 ############################################################################ */
 .sidebar-navigation {
-    font: var(--font-body-m-light);
-    & h2 {
-        font: var(--font-heading-m);
-    }
+  font: var(--font-body-m-light);
+  & h2 {
+    font: var(--font-heading-m);
+  }
+  & li {
+    border-left: var(--border-width-m) var(--separator-color) solid;
+  }
+}
+
+/* Footer Info
+############################################################################ */
+.footer-info {
+  & h4 {
+    font: var(--font-heading-s-semibold);
+  }
+  font: var(--font-body-m-light);
 }
 
 /* Footer
 ############################################################################ */
-.footer-info { 
-    & h4 {
-        font: var(--font-heading-s-semibold);
-    }
-    & {
-        font: var(--font-body-m-light);
-    }
+footer {
+  background-color: var(--footer-background-color);
+  color: var(--footer-text-color);
 }

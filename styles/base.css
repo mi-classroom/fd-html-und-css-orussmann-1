@@ -2,3 +2,7 @@ h1 {
   font: var(--font-heading-l);
 }
 
+body {
+  background-color: var(--base-background-color);
+  color: var(--base-text-color);
+}

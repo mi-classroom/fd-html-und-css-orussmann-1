@@ -12,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./../styles/variables.css">
+    <link rel="stylesheet" href="./../styles/reset.css">
+    <link rel="stylesheet" href="./../styles/base.css">
+    <link rel="stylesheet" href="./../styles/components.css">
     <title>Die Biographien von Lukas Cranach und seinen Söhnen</title>
 </head>
 
@@ -32,9 +36,9 @@
     <main>
         <article>
             <h1>Biographien von Lukas Cranach und seinen Söhnen</h1>
-            <section>
+            <section class="artist-info-block">
                 <h2 id="lucas-the-elder">Lucas Cranach der Ältere</h2>
-                <figure>
+                <figure class="artist-short-info">
                     <section>
                         <h3>Kurzüberblick</h3>
                         <p>Lucas Cranach der Ältere (1472–1553) war ein einflussreicher Maler, Drucker und Unternehmer
@@ -114,7 +118,7 @@
                     späteren Karl V. Einige Jahre darauf beauftragte Maximilian I. Cranach und Albrecht Dürer mit der
                     Illustration
                     seines Gebetbuches.</p>
-                <figure>
+                <figure class="artwork-card">
                     <img src="./../assets/images/lucas-cranach-the-elder-red-hat.svg"
                         alt="Selbstbildnis von Lucas Cranach dem Älteren mit rotem Hut">
                     <figcaption>​Lucas Cranach der Ältere, Die Heilige Sippe, um 1509/10. Lindenholztafel. Wien,
@@ -173,7 +177,7 @@
                     mit
                     aufrecht
                     stehenden sondern mit liegenden Flügeln dargestellt.</p>
-                <figure>
+                <figure class="artwork-card">
                     <img src="./../assets/images/lucas-cranch-the-elder-dark-background.svg"
                         alt="Selbstbildnis von Lucas Cranach dem Älteren vor dunklem Hintergrund">
                     <figcaption>Lucas Cranach der Ältere, Selbstbildnis, 1531. Holztafel. Schloss Stolzenfels. Detail
@@ -208,7 +212,7 @@
                     1500 erhaltenen Werken ersichtlich, sondern auch an der Schwierigkeit, die Werke höchster Qualität
                     eindeutig
                     zuzuschreiben.</p>
-                <section>
+                <section class="artist-cv">
                     <h3>Lebenslauf</h3>
                     <table>
                         <tr>
@@ -314,9 +318,9 @@
                     </table>
                 </section>
             </section>
-            <section>
+            <section class="artist-info-block">
                 <h2 id="hans-cranach">Hans Cranach</h2>
-                <figure>
+                <figure class="artist-short-info">
                     <img src="./../assets/images/heraldik.svg"
                         alt="Wappen der Familie Cranach, mit geflügelter Schlange, Jahreszahl 1536 und Initialen H.C.">
                     <section>
@@ -329,53 +333,59 @@
                         </ul>
                     </section>
                 </figure>
-                <table>
-                    <tr>
-                        <td>ca. 1513</td>
-                        <td>geboren in Wittenberg als erster Sohn von Lucas Cranach und dessen Ehefrau Barbara Brengbier
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>ca. 1527/29</td>
-                        <td>Beginn der Lehrzeit in der väterlichen Werkstatt zusammen mit Bruder Lucas</td>
-                    </tr>
-                    <tr>
-                        <td>1534</td>
-                        <td>Bildnis eines bärtigen Mannes (Museo Thyssen-Bornemisza, Madrid) datiert "1534" und signiert
-                            mit de
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1534</td>
-                        <td>Empfang einer Zahlung an seinen Vater auf dem Leipziger Michaelismarkt</td>
-                    </tr>
-                    <tr>
-                        <td>1536/37</td>
-                        <td>in Abrechnungen für Arbeiten im Torgauer Schloss erwähnt</td>
-                    </tr>
-                    <tr>
-                        <td>1537</td>
-                        <td>Bild Herkules bei Omphale (Museo Thyssen-Bornemisza, Madrid), datiert "1537" und signiert
-                            mit
-                            Schlangensignet zwischen Initialen "HC"</td>
-                    </tr>
-                    <tr>
-                        <td>1537</td>
-                        <td>Studienreise nach Italien</td>
-                    </tr>
-                    <tr>
-                        <td>1537</td>
-                        <td>Skizzenbuch</td>
-                    </tr>
-                    <tr>
-                        <td>9. Okt. 1537</td>
-                        <td>verstorben in Bologna</td>
-                    </tr>
-                </table>
+                <section class="artist-cv">
+                    <h3>Lebenslauf</h3>
+                    <table>
+                        <tr>
+                            <td>ca. 1513</td>
+                            <td>geboren in Wittenberg als erster Sohn von Lucas Cranach und dessen Ehefrau Barbara
+                                Brengbier
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ca. 1527/29</td>
+                            <td>Beginn der Lehrzeit in der väterlichen Werkstatt zusammen mit Bruder Lucas</td>
+                        </tr>
+                        <tr>
+                            <td>1534</td>
+                            <td>Bildnis eines bärtigen Mannes (Museo Thyssen-Bornemisza, Madrid) datiert "1534" und
+                                signiert
+                                mit de
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1534</td>
+                            <td>Empfang einer Zahlung an seinen Vater auf dem Leipziger Michaelismarkt</td>
+                        </tr>
+                        <tr>
+                            <td>1536/37</td>
+                            <td>in Abrechnungen für Arbeiten im Torgauer Schloss erwähnt</td>
+                        </tr>
+                        <tr>
+                            <td>1537</td>
+                            <td>Bild Herkules bei Omphale (Museo Thyssen-Bornemisza, Madrid), datiert "1537" und
+                                signiert
+                                mit
+                                Schlangensignet zwischen Initialen "HC"</td>
+                        </tr>
+                        <tr>
+                            <td>1537</td>
+                            <td>Studienreise nach Italien</td>
+                        </tr>
+                        <tr>
+                            <td>1537</td>
+                            <td>Skizzenbuch</td>
+                        </tr>
+                        <tr>
+                            <td>9. Okt. 1537</td>
+                            <td>verstorben in Bologna</td>
+                        </tr>
+                    </table>
+                </section>
             </section>
-            <section>
+            <section class="artist-info-block">
                 <h2 id="lucas-the-younger">Lucas Cranach der Jüngere</h2>
-                <figure>
+                <figure class="artist-short-info">
                     <img src="./../assets/images/men-in-dark-robes.svg"
                         alt="Eine Männergruppe in dunklen Roben, von hinten">
                     <section>
@@ -388,116 +398,122 @@
                         </ul>
                     </section>
                 </figure>
-                <table>
-                    <tr>
-                        <td>04. Okt. 1515</td>
-                        <td>geboren in Wittenberg als zweiter Sohn von Lucas Cranach und dessen Ehefrau Barbara
-                            Brengbier
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>ca. 1527/29</td>
-                        <td>Beginn der Lehrzeit in der väterlichen Werkstatt zusammen mit Bruder Hans</td>
-                    </tr>
-                    <tr>
-                        <td>1535</td>
-                        <td>erstmals namentlich in Abrechnungen der väterlichen Werkstatt erwähnt</td>
-                    </tr>
-                    <tr>
-                        <td>1536/37</td>
-                        <td>in Abrechnungen für Arbeiten im Torgauer Schloss erwähnt</td>
-                    </tr>
-                    <tr>
-                        <td>1541</td>
-                        <td>Tod seiner Mutter Babara</td>
-                    </tr>
-                    <tr>
-                        <td>1541</td>
-                        <td>Heirat mit Barbara Brück, Tochter des kursächsischen Kanzlers Dr. Gregor Brück, aus dieser
-                            Ehe
-                            vier
-                            Kinder</td>
-                    </tr>
-                    <tr>
-                        <td>1549 – 1567</td>
-                        <td>Ratsherr in Wittenberg</td>
-                    </tr>
-                    <tr>
-                        <td>1550</td>
-                        <td>Tod seiner Frau Barbara</td>
-                    </tr>
-                    <tr>
-                        <td>1551</td>
-                        <td>großformatige Herkulesbilder für das Dresdner Schloss</td>
-                    </tr>
-                    <tr>
-                        <td>1551</td>
-                        <td>Heirat mit Magdalena Schurff, Tochter des Medizinprofessors Augustin Schurff und Nichte
-                            Philipp
-                            Melanchthons, aus dieser Ehe fünf Kinder</td>
-                    </tr>
-                    <tr>
-                        <td>Jan. 1553</td>
-                        <td>Aufenthalt an Weimar zusammen mit Familie und Gesellen aufgrund der Pest in Wittenberg</td>
-                    </tr>
-                    <tr>
-                        <td>16. Okt. 1553</td>
-                        <td>Tod des Vaters Lucas Cranach d. Ä. in Weimar</td>
-                    </tr>
-                    <tr>
-                        <td>1554</td>
-                        <td>Geburt Augustin Cranach (gest. 1595)</td>
-                    </tr>
-                    <tr>
-                        <td>1555</td>
-                        <td>Amt des Kämmerers in Wittenberg</td>
-                    </tr>
-                    <tr>
-                        <td>1558</td>
-                        <td>Epitaph für Michael Meyenburg, Nordhausen, St. Blasii</td>
-                    </tr>
-                    <tr>
-                        <td>1565</td>
-                        <td>Epitaph für Fürst Joachim von Anhalt, Dessau, St. Johannis und St. Marien</td>
-                    </tr>
-                    <tr>
-                        <td>1565/67</td>
-                        <td>Bürgermeister von Wittenberg</td>
-                    </tr>
-                    <tr>
-                        <td>1567</td>
-                        <td>Grumbachsche Händel, Einsetzung Cranachs für seine verwitwete Schwester Barbara zur
-                            teilweisen
-                            Rückgabe
-                            der eingezogenen Besitztümer ihres Mannes</td>
-                    </tr>
-                    <tr>
-                        <td>1568</td>
-                        <td>Immatrikulation an der Universität Wittenberg</td>
-                    </tr>
-                    <tr>
-                        <td>25. Jan. 1586</td>
-                        <td>verstorben in Wittenberg</td>
-                    </tr>
-                    <tr>
-                        <td>27. Jan. 1586</td>
-                        <td>Beerdigung in der Stadtkirche</td>
-                    </tr>
-                    <tr>
-                        <td>1608</td>
-                        <td>Tod Cranachs zweiter Frau Magdalena, Epitaph für Cranach und seine beiden Ehefrauen in der
-                            Stadtkirche
-                        </td>
-                    </tr>
-                </table>
-                <figure>
+                <section class="artist-cv">
+                    <h3>Lebenslauf</h3>
+                    <table>
+                        <tr>
+                            <td>04. Okt. 1515</td>
+                            <td>geboren in Wittenberg als zweiter Sohn von Lucas Cranach und dessen Ehefrau Barbara
+                                Brengbier
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ca. 1527/29</td>
+                            <td>Beginn der Lehrzeit in der väterlichen Werkstatt zusammen mit Bruder Hans</td>
+                        </tr>
+                        <tr>
+                            <td>1535</td>
+                            <td>erstmals namentlich in Abrechnungen der väterlichen Werkstatt erwähnt</td>
+                        </tr>
+                        <tr>
+                            <td>1536/37</td>
+                            <td>in Abrechnungen für Arbeiten im Torgauer Schloss erwähnt</td>
+                        </tr>
+                        <tr>
+                            <td>1541</td>
+                            <td>Tod seiner Mutter Babara</td>
+                        </tr>
+                        <tr>
+                            <td>1541</td>
+                            <td>Heirat mit Barbara Brück, Tochter des kursächsischen Kanzlers Dr. Gregor Brück, aus
+                                dieser
+                                Ehe
+                                vier
+                                Kinder</td>
+                        </tr>
+                        <tr>
+                            <td>1549 – 1567</td>
+                            <td>Ratsherr in Wittenberg</td>
+                        </tr>
+                        <tr>
+                            <td>1550</td>
+                            <td>Tod seiner Frau Barbara</td>
+                        </tr>
+                        <tr>
+                            <td>1551</td>
+                            <td>großformatige Herkulesbilder für das Dresdner Schloss</td>
+                        </tr>
+                        <tr>
+                            <td>1551</td>
+                            <td>Heirat mit Magdalena Schurff, Tochter des Medizinprofessors Augustin Schurff und Nichte
+                                Philipp
+                                Melanchthons, aus dieser Ehe fünf Kinder</td>
+                        </tr>
+                        <tr>
+                            <td>Jan. 1553</td>
+                            <td>Aufenthalt an Weimar zusammen mit Familie und Gesellen aufgrund der Pest in Wittenberg
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16. Okt. 1553</td>
+                            <td>Tod des Vaters Lucas Cranach d. Ä. in Weimar</td>
+                        </tr>
+                        <tr>
+                            <td>1554</td>
+                            <td>Geburt Augustin Cranach (gest. 1595)</td>
+                        </tr>
+                        <tr>
+                            <td>1555</td>
+                            <td>Amt des Kämmerers in Wittenberg</td>
+                        </tr>
+                        <tr>
+                            <td>1558</td>
+                            <td>Epitaph für Michael Meyenburg, Nordhausen, St. Blasii</td>
+                        </tr>
+                        <tr>
+                            <td>1565</td>
+                            <td>Epitaph für Fürst Joachim von Anhalt, Dessau, St. Johannis und St. Marien</td>
+                        </tr>
+                        <tr>
+                            <td>1565/67</td>
+                            <td>Bürgermeister von Wittenberg</td>
+                        </tr>
+                        <tr>
+                            <td>1567</td>
+                            <td>Grumbachsche Händel, Einsetzung Cranachs für seine verwitwete Schwester Barbara zur
+                                teilweisen
+                                Rückgabe
+                                der eingezogenen Besitztümer ihres Mannes</td>
+                        </tr>
+                        <tr>
+                            <td>1568</td>
+                            <td>Immatrikulation an der Universität Wittenberg</td>
+                        </tr>
+                        <tr>
+                            <td>25. Jan. 1586</td>
+                            <td>verstorben in Wittenberg</td>
+                        </tr>
+                        <tr>
+                            <td>27. Jan. 1586</td>
+                            <td>Beerdigung in der Stadtkirche</td>
+                        </tr>
+                        <tr>
+                            <td>1608</td>
+                            <td>Tod Cranachs zweiter Frau Magdalena, Epitaph für Cranach und seine beiden Ehefrauen in
+                                der
+                                Stadtkirche
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <figure class="artwork-card">
                     <img src="./../assets/images/lucas-cranch-the-elder-white-beard.svg" alt="Lucas Cranach der Ältere mit
                         weißem Bart">
                     <figcaption>Lucas Cranach der Jüngere, Epitaphaltar in der Stadtkirche St. Peter und Paul in Weimar,
                         1555.
                         Mitteltafel, Detail mit dem Bildnis Lucas Cranachs d. Ä.</figcaption>
                 </figure>
-                <figure>
+                <figure class="artwork-card">
                     <img src="./../assets/images/men-in-dark-robes-2.svg"
                         alt="Eine Männergruppe in dunklen Roben, von hinten">
                     <figcaption>Lucas Cranach der Jüngere, Epitaph für Fürst Joachim von Anhalt, 1565. Holztafel, St.
@@ -507,7 +523,7 @@
                 </figure>
             </section>
         </article>
-        <aside>
+        <aside class="sidebar-navigation">
             <nav>
                 <ul>
                     <li><a href="#lucas-the-elder">Lucas Cranach der Ältere</a></li>
@@ -521,7 +537,7 @@
         <a href="./../index.html">
             <img src="./../assets/images/cda-logo-white.svg" alt="Main logo">
         </a>
-        <section>
+        <section class="footer-info">
             <h4>Allgemeines</h4>
             <ul>
                 <li>Impressum</li>
@@ -530,7 +546,7 @@
                 <li>FAQ</li>
             </ul>
         </section>
-        <section>
+        <section class="footer-info">
             <h4>Entdecken</h4>
             <ul>
                 <li>Lucas Cranach</li>
@@ -541,13 +557,13 @@
                 <li>Forschung</li>
             </ul>
         </section>
-        <section>
+        <section class="footer-info">
             <h4>Kontakt</h4>
             <p>Haben Sie Fragen oder Anregungen?
                 Kontaktieren Sie uns ganz einfach über folgenden Link:</p>
             <a href="">Zum Kontaktformular</a>
         </section>
-        <p>Stiftung Museum Kunstpalast, Düsseldorf / Technische Hochschule Köln, 2025</p>
+        <p class="footer-info">Stiftung Museum Kunstpalast, Düsseldorf / Technische Hochschule Köln, 2025</p>
     </footer>
 </body>
 

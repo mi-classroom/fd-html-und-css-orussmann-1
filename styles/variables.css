@@ -1,0 +1,102 @@
+:root {
+    /* Faktor */
+
+    /* Sizes */
+    --size-xxxs: 2px;
+    --size-xxs: 4px;
+    --size-xs: 8px;
+    --size-s: 12px;
+    --size-m: 16px;
+    --size-l: 24px;
+    --size-xl: 32px;
+    --size-xxl: 40px;
+    --size-xxxl: 48px;
+    --size-4xl: 64px;
+    --size-5xl: 92px;
+    --size-6xl: 120px;
+
+    --border-width-s: 1px;
+    --border-width-m: 2px;
+    --border-width-l: 4px;
+    
+    /* Font Properties */
+    --font-family-sans: 'IBM Plex Sans', Arial, sans-serif;
+    
+    /* Font Weights */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Line Heights */
+    --line-height-tight: 120%;
+    --line-height-base: 130%;
+    --line-height-loose: 140%;
+
+    /* Functional Fonts */
+    --font-heading-xl: normal var(--font-weight-semibold) 52px/var(--line-height-tight) var(--font-family-sans); 
+    --font-heading-l: normal var(--font-weight-regular) 32px/var(--line-height-tight) var(--font-family-sans); 
+    --font-heading-m: normal var(--font-weight-light) 24px/var(--line-height-tight) var(--font-family-sans); 
+    --font-heading-s-regular: normal var(--font-weight-regular) 16px/var(--line-height-tight) var(--font-family-sans); 
+    --font-heading-s-semibold: normal var(--font-weight-semibold) 16px/var(--line-height-tight) var(--font-family-sans); 
+    --font-body-l: normal var(--font-weight-semibold) 20px/var(--line-height-loose) var(--font-family-sans); 
+    --font-body-m-bold: normal var(--font-weight-bold) 16px/var(--line-height-base) var(--font-family-sans); 
+    --font-body-m-regular: normal var(--font-weight-regular) 16px/var(--line-height-base) var(--font-family-sans); 
+    --font-body-m-light: normal var(--font-weight-light) 16px/var(--line-height-base) var(--font-family-sans); 
+    --font-body-s-light: normal var(--font-weight-light) 12px/var(--line-height-base) var(--font-family-sans); 
+
+    /* Opacity */
+    --opacity-medium:
+    
+    /* Base Colors */
+    --color-primary-100: #FFF0D4;
+    --color-primary-200: #FFE1A9;
+    --color-primary-300: #FFD37E;
+    --color-primary-400: #FFC450;
+    --color-primary-default: #FEB701;
+    --color-primary-600: #C68F12; 
+    --color-primary-700: #916916;
+    --color-primary-800: #5F4615;
+    --color-primary-900: #322510;
+
+    --color-default: #CC5800;
+
+    --color-neutral-100: #FAFAFA;
+    --color-neutral-200: #F2F2F2;
+    --color-neutral-300: #E5E5E5;
+    --color-neutral-400: #B4B4B4;
+    --color-neutral-default: #949494;
+    --color-neutral-600: #747474;
+    --color-neutral-700: #343434;
+    --color-neutral-800: #545454;
+    --color-neutral-900: #222222;
+
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    
+    /* Functional Colors */
+    --logo-header-color: var(--color-neutral-400);
+    --logo-footer-color: var(--color-white);
+    --icon-color: var(--color-primary-default);
+    --base-text-color: var(--color-black);
+    --footer-text-color: var(--color-white);
+    --separator-color: var(--color-neutral-400);
+    --card-color: var(--color-neutral-400);
+    --card-side-strip-color: var(--color-primary-default);
+    --footer-background-color: var(--color-neutral-900);
+    --intra-page-nav-marked-color: var(--color-primary-default);
+    --intra-page-nav-unmarked-color: var(--color-neutral-400);
+
+    /* Transitions */
+    
+    /* Misc */ 
+}
+
+
+
+
+
+
+
+
+

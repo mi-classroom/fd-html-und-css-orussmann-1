@@ -43,6 +43,9 @@
 ############################################################################ */
 .sidebar-navigation {
     font: var(--font-body-m-light);
+    & h2 {
+        font: var(--font-heading-m);
+    }
 }
 
 /* Footer

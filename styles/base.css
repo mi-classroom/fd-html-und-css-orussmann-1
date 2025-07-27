@@ -1,8 +1,16 @@
 h1 {
   font: var(--font-heading-l);
+  margin-bottom: var;
 }
 
 body {
   background-color: var(--base-background-color);
   color: var(--base-text-color);
+}
+
+header, main {
+  margin: auto var(--size-l);
+  /*& * {
+    border: 1px red solid;
+  }*/
 }

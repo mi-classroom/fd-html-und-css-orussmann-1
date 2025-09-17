@@ -16,24 +16,54 @@
     <link rel="stylesheet" href="./../styles/reset.css">
     <link rel="stylesheet" href="./../styles/base.css">
     <link rel="stylesheet" href="./../styles/components.css">
+    <link rel="stylesheet" href="./../styles/header.css">
+    <link rel="stylesheet" href="./../styles/button.css">
+    <script src="./../scripts/main.js" defer></script>
     <title>Die Biographien von Lukas Cranach und seinen Söhnen</title>
 </head>
 
 <body>
-    <header>
-        <a href="./../index.html">
-            <img src="./../assets/images/cda-logo.svg" alt="Main logo">
-        </a>
-        <ul class="nav-list hidden">
-            <li><a href="">Archiv</a><img src="./../assets/images/expand-more.svg" alt="Dropdown"></li>
-            <li><a href="">Personen</a><img src="./../assets/images/expand-more.svg" alt="Dropdown"></li>
-            <li><a href="">Forschung</a></li>
-            <li><a href="">Aktuelles</a></li>
-        </ul>
-        <div class="header-icons">
-            <img class="search-icon" src="./../assets/images/search.svg" alt="Search icon">
-            <img src="./../assets/images/burger-menu.svg" alt="Hamburger menu icon">
+    <header class="header">
+        <div class="header-container">
+            <a class="header-logo" href="../index.html">
+                <img src="../assets/images/cda-logo.svg" alt="Cranach Digital Archive Logo">
+            </a>
+            <div class="header-buttons">
+                <button class="header-button" data-js-search-open>
+                    <img class="search-icon icon" src="./../assets/images/search.svg" alt="Search icon">
+                </button>
+                <button class="header-button" data-js-main-menu-open>
+                    <img data-js-main-menu-icon class="icon" src="./../assets/images/burger-menu.svg"
+                        alt="Hamburger menu icon">
+                </button>
+            </div>
         </div>
+        <nav class="header-overlay header-nav" aria-label="Hauptnavigation" data-js-main-menu-target>
+            <button class="header-button header-overlay-close-button" data-js-main-menu-close>
+<img src="./../assets/images/close-menu.svg" alt="Close overlay menu icon">            </button>
+            <ul class="header-nav-list">
+                <li>
+                    Archiv
+                    <ul class="header-nav-sublist">
+                        <li>Alle Werke</li>
+                        <li>Gemälde</li>
+                        <li>Archivalien</li>
+                        <li>Literatur</li>
+                    </ul>
+                </li>
+                <li>
+                    Personen
+                    <ul class="header-nav-sublist">
+                        <li><a href="lucas-cranach.html">Lucas Cranach</a></li>
+                        <li class="red-text important-text">Martin Luther</li>
+                        <li>Über uns</li>
+                        <li>Partner</li>
+                    </ul>
+                </li>
+                <li>Forschung</li>
+                <li>Aktuelles</li>
+            </ul>
+        </nav>
     </header>
     <main>
         <article>
@@ -123,7 +153,8 @@
                 <figure class="artwork-card">
                     <img src="./../assets/images/lucas-cranach-the-elder-red-hat.svg"
                         alt="Selbstbildnis von Lucas Cranach dem Älteren mit rotem Hut">
-                    <figcaption class="text">​Lucas Cranach der Ältere, Die Heilige Sippe, um 1509/10. Lindenholztafel. Wien,
+                    <figcaption class="text">​Lucas Cranach der Ältere, Die Heilige Sippe, um 1509/10. Lindenholztafel.
+                        Wien,
                         Gemäldegalerie
                         der
                         Akademie der bildenden Künste. Detail mit dem Selbstbildnis des Künstlers.</figcaption>
@@ -182,7 +213,8 @@
                 <figure class="artwork-card">
                     <img src="./../assets/images/lucas-cranch-the-elder-dark-background.svg"
                         alt="Selbstbildnis von Lucas Cranach dem Älteren vor dunklem Hintergrund">
-                    <figcaption class="text">Lucas Cranach der Ältere, Selbstbildnis, 1531. Holztafel. Schloss Stolzenfels. Detail
+                    <figcaption class="text">Lucas Cranach der Ältere, Selbstbildnis, 1531. Holztafel. Schloss
+                        Stolzenfels. Detail
                     </figcaption>
                 </figure>
                 <p>1547 nahm Cranachs Tätigkeit als Hofmaler ein vorläufiges Ende, als Kurfürst Johann Friedrich I., der
@@ -517,14 +549,16 @@
                 <figure class="artwork-card">
                     <img src="./../assets/images/lucas-cranch-the-elder-white-beard.svg" alt="Lucas Cranach der Ältere mit
                         weißem Bart">
-                    <figcaption class="text">Lucas Cranach der Jüngere, Epitaphaltar in der Stadtkirche St. Peter und Paul in Weimar,
+                    <figcaption class="text">Lucas Cranach der Jüngere, Epitaphaltar in der Stadtkirche St. Peter und
+                        Paul in Weimar,
                         1555.
                         Mitteltafel, Detail mit dem Bildnis Lucas Cranachs d. Ä.</figcaption>
                 </figure>
                 <figure class="artwork-card">
                     <img src="./../assets/images/men-in-dark-robes-2.svg"
                         alt="Eine Männergruppe in dunklen Roben, von hinten">
-                    <figcaption class="text">Lucas Cranach der Jüngere, Epitaph für Fürst Joachim von Anhalt, 1565. Holztafel, St.
+                    <figcaption class="text">Lucas Cranach der Jüngere, Epitaph für Fürst Joachim von Anhalt, 1565.
+                        Holztafel, St.
                         Johannis
                         und
                         St. Marien, Dessau. Detail mit vermutlichem Selbstbildnis Lucas Cranachs d. J.</figcaption>

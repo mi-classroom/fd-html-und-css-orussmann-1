@@ -15,9 +15,38 @@
     --size-5xl: 92px;
     --size-6xl: 120px;
 
+
+    /* Spacing */
+    --spacing-xxxs: 2px;
+    --spacing-xxs: 4px;
+    --spacing-xs: 8px;
+    --spacing-s: 12px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 40px;
+    --spacing-xxxl: 48px;
+    --spacing-4xl: 64px;
+    --spacing-5xl: 92px;
+    --spacing-6xl: 120px;
+
     --border-width-s: 1px;
     --border-width-m: 2px;
     --border-width-l: 4px;
+
+    /*Font Sizes */
+    --font-size-xxxs: 2px;
+    --font-size-xxs: 4px;
+    --font-size-xs: 8px;
+    --font-size-s: 12px;
+    --font-size-m: 16px;
+    --font-size-l: 24px;
+    --font-size-xl: 32px;
+    --font-size-xxl: 40px;
+    --font-size-xxxl: 48px;
+    --font-size-4xl: 64px;
+    --font-size-5xl: 92px;
+    --font-size-6xl: 120px;
     
     /* Font Properties */
     --font-family-sans: 'IBM Plex Sans', Arial, sans-serif;

@@ -1,0 +1,14 @@
+/* Button
+############################################################################# */
+.button {
+  background-color: var(--color-primary-default);
+  padding: 0 var(--spacing-xs);
+  border: none;
+  color: #fff;
+  font-size: var(--font-size-l);
+  height: 38px;
+
+  &:active {
+    background-color: var(--color-primary-400);
+  }
+}

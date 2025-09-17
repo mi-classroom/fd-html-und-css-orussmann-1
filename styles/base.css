@@ -9,7 +9,7 @@ body {
 }
 
 header, main {
-  margin: auto var(--size-l);
+  margin: 0 var(--size-l);
   /*& * {
     border: 1px red solid;
   }*/

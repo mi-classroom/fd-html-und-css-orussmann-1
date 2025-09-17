@@ -1,6 +1,6 @@
 /* Header
 ############################################################################ */
-header {
+/* header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -23,7 +23,7 @@ header {
     flex-flow: row wrap;
     gap: 48px;
   }
-}
+} */
 
 /* Artist Info Block
 ############################################################################ */

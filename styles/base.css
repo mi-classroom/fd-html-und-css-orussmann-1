@@ -1,6 +1,6 @@
 h1 {
+  margin-bottom: var(--font-heading-l);
   font: var(--font-heading-l);
-  margin-bottom: var;
 }
 
 body {
@@ -10,7 +10,8 @@ body {
 
 header, main {
   margin: 0 var(--size-l);
-  /*& * {
+  
+  /* & * {
     border: 1px red solid;
-  }*/
+  } */
 }

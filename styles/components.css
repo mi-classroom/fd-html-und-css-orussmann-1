@@ -1,5 +1,6 @@
 /* Header
 ############################################################################ */
+
 /* header {
   display: flex;
   flex-flow: row nowrap;
@@ -53,15 +54,16 @@
 ############################################################################ */
 .artist-short-info {
   & h3 {
-    font: var(--font-heading-s-regular);
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font: var(--font-heading-s-regular);
   }
 
   & .text {
+    padding: var(--size-l);
     border-left: var(--border-width-l) var(--color-primary-default) solid;
     background-color: var(--card-color);
-    padding: var(--size-l);
+
     & p,
     ul {
       margin-top: var(--size-xs);
@@ -80,23 +82,26 @@
 /* Image with Info
 ############################################################################ */
 .artwork-card {
+  margin-bottom: var(--size-m);
   font: var(--font-body-s-light);
+
   & .text {
-    background-color: var(--card-color);
     padding: var(--size-m);
+    background-color: var(--card-color);
   }
+
   & img {
     width: 100vw;
   }
-  margin-bottom: var(--size-m);
+
 }
 
 /* Artist CV
 ############################################################################ */
 .artist-cv {
   & h3 {
-    font: var(--font-heading-s-regular);
     margin-bottom: var(--size-xl);
+    font: var(--font-heading-s-regular);
   }
 
   & table {
@@ -115,13 +120,10 @@
     border-bottom: var(--border-width-s) var(--separator-color) solid;
   }
 
-  & tr {
-    padding: var(--size-s) 0;
-  }
-
-  & tr {
+  &tr {
     display: flex;
     flex-flow: column nowrap;
+    padding: var(--size-s) 0;
   }
 
   margin: var(--size-xxxl) 0 var(--size-xl) 0;
@@ -131,9 +133,11 @@
 ############################################################################ */
 .sidebar-navigation {
   font: var(--font-body-m-light);
+
   & h2 {
     font: var(--font-heading-m);
   }
+
   & li {
     border-left: var(--border-width-m) var(--separator-color) solid;
   }
@@ -147,8 +151,8 @@
 ############################################################################ */
 .footer-info {
   & h4 {
-    font: var(--font-heading-s-semibold);
     margin-bottom: var(--size-m);
+    font: var(--font-heading-s-semibold);
   }
 
   & li {
@@ -158,21 +162,24 @@
   &:nth-of-type(3) {
     margin-bottom: var(--size-4xl);
   }
+
   font: var(--font-body-m-light);
 }
 
 /* Footer
 ############################################################################ */
 footer {
+  padding: var(--size-xxxl) var(--size-l) var(--size-l) var(--size-l);
+  margin-top: var(--size-5xl);
   background-color: var(--footer-background-color);
   color: var(--footer-text-color);
-  margin-top: var(--size-5xl);
+
   & > * {
     margin-top: var(--size-xxxl);
   }
 
-  & ul {
+  &ul {
     list-style: none;
   }
-  padding: var(--size-xxxl) var(--size-l) var(--size-l) var(--size-l);
+
 }

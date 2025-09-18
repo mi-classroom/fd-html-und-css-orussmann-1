@@ -1,12 +1,12 @@
 /* Button
 ############################################################################# */
 .button {
-  background-color: var(--color-primary-default);
+  height: 38px;
   padding: 0 var(--spacing-xs);
   border: none;
+  background-color: var(--color-primary-default);
   color: #fff;
   font-size: var(--font-size-l);
-  height: 38px;
 
   &:active {
     background-color: var(--color-primary-400);

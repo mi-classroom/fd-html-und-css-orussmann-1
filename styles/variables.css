@@ -29,12 +29,11 @@
     --spacing-4xl: 64px;
     --spacing-5xl: 92px;
     --spacing-6xl: 120px;
-
     --border-width-s: 1px;
     --border-width-m: 2px;
     --border-width-l: 4px;
 
-    /*Font Sizes */
+    /* Font Sizes */
     --font-size-xxxs: 2px;
     --font-size-xxs: 4px;
     --font-size-xs: 8px;
@@ -49,7 +48,7 @@
     --font-size-6xl: 120px;
     
     /* Font Properties */
-    --font-family-sans: 'IBM Plex Sans', Arial, sans-serif;
+    --font-family-sans: 'IBM Plex Sans', arial, sans-serif;
     
     /* Font Weights */
     --font-weight-light: 300;
@@ -87,9 +86,7 @@
     --color-primary-700: #916916;
     --color-primary-800: #5F4615;
     --color-primary-900: #322510;
-
     --color-default: #CC5800;
-
     --color-neutral-100: #FAFAFA;
     --color-neutral-200: #F2F2F2;
     --color-neutral-300: #E5E5E5;
@@ -98,10 +95,9 @@
     --color-neutral-600: #747474;
     --color-neutral-700: #343434;
     --color-neutral-800: #545454;
-    --color-neutral-900: #222222;
-
-    --color-white: #FFFFFF;
-    --color-black: #000000;
+    --color-neutral-900: #222;
+    --color-white: #FFF;
+    --color-black: #000;
     
     /* Functional Colors */
     --logo-header-color: var(--color-neutral-400);
@@ -115,7 +111,6 @@
     --card-color: var(--color-neutral-200);
     --card-side-strip-color: var(--color-primary-default);
     --footer-background-color: var(--color-neutral-900);
-    --footer-text-color: var(--color-white);
     --intra-page-nav-marked-color: var(--color-primary-default);
     --intra-page-nav-unmarked-color: var(--color-neutral-400);
 

@@ -40,3 +40,37 @@ mainSections.forEach(section => {
     newMenyEntry.appendChild(subEntriesList)
     menu.appendChild(newMenyEntry);
 });
+
+const searchForm = document.querySelector('.header-search-input');
+const closeSearchBtn = document.querySelector('[data-js-search-close]');
+const searchInputField = document.querySelector('[data-js-search-input]');
+const searchInputBtn = document.querySelector('[data-js-search-button]');
+
+searchForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+});
+
+searchBtn.addEventListener('click', (event) => {
+    searchInputField.value = "";
+    toggleSearchOverlay();
+});
+
+
+closeSearchBtn.addEventListener('click', () => {
+    toggleSearchOverlay();
+});
+
+searchInputBtn.addEventListener('click', (event) => {
+    const inputValue = searchInputField.value;
+    console.log(inputValue);
+    toggleSearchOverlay();
+});
+
+function toggleSearchOverlay() {
+    searchForm.classList.toggle('is-active');
+    searchBtn.classList.toggle('is-active');
+    closeSearchBtn.classList.toggle('is-active');
+    hamburgerBtn.classList.toggle('is-active');
+}
+
+// TODO: Rework ambiguous naming..

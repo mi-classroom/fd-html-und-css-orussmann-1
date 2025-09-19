@@ -45,6 +45,7 @@ const searchForm = document.querySelector('.header-search-input');
 const closeSearchBtn = document.querySelector('[data-js-search-close]');
 const searchInputField = document.querySelector('[data-js-search-input]');
 const searchInputBtn = document.querySelector('[data-js-search-button]');
+const header = document.querySelector('.header-container');
 
 searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -52,11 +53,13 @@ searchForm.addEventListener('submit', (event) => {
 
 searchBtn.addEventListener('click', (event) => {
     searchInputField.value = "";
+    header.classList.toggle('search-active');
     toggleSearchOverlay();
 });
 
 
 closeSearchBtn.addEventListener('click', () => {
+    header.classList.toggle('search-active');
     toggleSearchOverlay();
 });
 

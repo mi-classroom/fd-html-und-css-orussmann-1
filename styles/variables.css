@@ -33,6 +33,8 @@
     --border-width-m: 2px;
     --border-width-l: 4px;
 
+    /* TODO: Use rems for font size, f.e. 9px => calc(1rem / 2) */
+
     /* Font Sizes */
     --font-size-xxxs: 2px;
     --font-size-xxs: 4px;

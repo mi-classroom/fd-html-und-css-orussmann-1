@@ -1,30 +1,49 @@
 /* Header
 ############################################################################ */
 
-/* header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 60px;
-  margin-bottom: var(--size-5xl);
+.header-nav-bar {
+  flex-grow: 1;
 
-  & .hidden {
-    display: none;
-  }
+  & .header-nav-list {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: var(--spacing-xxl);
+    font: var(--font-body-l);
+    gap: var(--spacing-xxl);
+    justify-self: end;
 
-  @media screen and (min-width: 668px) {
-    & .hidden {
-      display: block;
+    & a {
+      text-decoration: none;
+    }
+
+    & li {
+      list-style-type: none;
+    }
+
+    &.max-medium-size {
+      display: none;
+    }
+
+    @media screen and (width >= 800px) {
+      &.max-medium-size {
+        display: flex;
+      }
+    }
+
+    & .list-item {
+      display: flex;
+      flex-flow: row wrap;
     }
   }
+}
 
-  & .header-icons {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 48px;
-  }
-} */
+.header-nav-bar.hidden,
+.header-nav-list.hidden,
+.header-nav-sublist.hidden {
+  display: none;
+}
 
 /* Artist Info Block
 ############################################################################ */
@@ -79,6 +98,13 @@
   margin: 0 auto;
 }
 
+@media screen and (width > 860px) {
+  .artist-short-info.flex {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
 /* Image with Info
 ############################################################################ */
 .artwork-card {
@@ -93,7 +119,17 @@
   & img {
     width: 100vw;
   }
+}
 
+.artwork-card.constrained-width {
+  max-width: 391px;
+}
+
+.artwork-card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: var(--spacing-l);
 }
 
 /* Artist CV
@@ -132,18 +168,47 @@
 /* Sidebar Navigation
 ############################################################################ */
 .sidebar-navigation {
+  min-width: fit-content;
+  flex-grow: 1;
   font: var(--font-body-m-light);
 
   & h2 {
+    margin-bottom: var(--spacing-m);
     font: var(--font-heading-m);
   }
 
   & li {
+    padding: var(--spacing-xs) 0 var(--spacing-xs) var(--spacing-xs);
     border-left: var(--border-width-m) var(--separator-color) solid;
+    list-style: none;
+
+    & a {
+      text-decoration: none;
+    }
   }
 
   &.hidden {
     display: none;
+  }
+}
+
+@media screen and (width >= 1212px) {
+  .sidebar-navigation.hidden {
+    display: block;
+  }
+}
+
+/* Main Conrainer
+############################################################################ */
+.main-container {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  gap: var(--spacing-5xl);
+}
+
+@media screen and (width >= 1212px) {
+  .main-container {
+    margin-right: var(--spacing-5xl);
   }
 }
 
@@ -157,6 +222,7 @@
 
   & li {
     margin-bottom: var(--size-xs);
+    list-style: none;
   }
 
   &:nth-of-type(3) {
@@ -178,8 +244,22 @@ footer {
     margin-top: var(--size-xxxl);
   }
 
-  &ul {
-    list-style: none;
+  & .footer-info-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
+}
 
+@media screen and (width <= 800px) {
+  .footer .footer-info-container {
+    gap: var(--size-l);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (width <= 450px) {
+  .footer .footer-info-container {
+    gap: var(--size-l);
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

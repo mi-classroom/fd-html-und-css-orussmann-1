@@ -36,9 +36,23 @@ body:has(.header-overlay.is-active) {
   .header-button {
     padding: 0;
     border: none;
+    margin-right: 20px;
     background: none;
     color: var(--color-primary-default);
     font-size: var(--font-size-2xl);
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  @media  screen and (width < 800px) {
+    .header-button {
+      &.hidden {
+        display: block;
+      }
+    }
+    
   }
 
   .header-overlay {

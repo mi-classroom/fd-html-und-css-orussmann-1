@@ -69,7 +69,7 @@
     --font-heading-m: normal var(--font-weight-light) 24px/var(--line-height-tight) var(--font-family-sans); 
     --font-heading-s-regular: normal var(--font-weight-regular) 16px/var(--line-height-tight) var(--font-family-sans); 
     --font-heading-s-semibold: normal var(--font-weight-semibold) 16px/var(--line-height-tight) var(--font-family-sans); 
-    --font-body-l: normal var(--font-weight-semibold) 20px/var(--line-height-loose) var(--font-family-sans); 
+    --font-body-l: normal var(--font-weight-light) 20px/var(--line-height-loose) var(--font-family-sans); 
     --font-body-m-bold: normal var(--font-weight-bold) 16px/var(--line-height-base) var(--font-family-sans); 
     --font-body-m-regular: normal var(--font-weight-regular) 16px/var(--line-height-base) var(--font-family-sans); 
     --font-body-m-light: normal var(--font-weight-light) 16px/var(--line-height-base) var(--font-family-sans); 

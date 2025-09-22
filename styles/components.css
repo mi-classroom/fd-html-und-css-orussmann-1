@@ -263,3 +263,10 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Article
+####################################################################### */
+h1 {
+  margin-bottom: var(--font-heading-l);
+  font: var(--font-heading-l);
+}

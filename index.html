@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/button.css">
+    <script src="./components/MainHeader.js" defer></script>
+    <script src="./components/TextBlock.js" defer></script>
+    <script src="./components/DiscoverCard.js" defer></script>
+    <script src="./components/SlideShow.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <main-header>
+            <h1 slot="heading-1" class="heading-1">Discover the work of Lucas Cranach</h1>
+            <img slot="image" class="image" src="./assets/images/01-hero-image/image.jpg"
+                alt="Maria with baby Jesus and Angels sitting outdoor">
+        </main-header>
+    </header>
+    <main>
+        <text-block>
+            <p class="paragraph" slot="paragraph">
+                Das Cranach Digital Archive (CDA) ist ein internationales Forschungsprojekt, das sich der Dokumentation
+                und
+                Erforschung der Werke von Lucas Cranach d. Ä. (1472–1553) und seiner Werkstatt widmet. Es bietet eine
+                umfassende digitale Sammlung hochauflösender Bilder, wissenschaftlicher Analysen und historischer
+                Dokumente
+                zu seinen Gemälden. Ziel ist es, Kunsthistorikern, Restauratoren und der Öffentlichkeit einen zentralen
+                Zugang zu detaillierten Informationen über Cranachs Werke zu ermöglichen und den Austausch
+                wissenschaftlicher Erkenntnisse zu fördern.
+            </p>
+        </text-block>
+        <discover-card>
+            <h2 slot="header-2">Gemälde, Archivalien und Literatur</h2>
+            <img slot="image"
+                src="./assets/images/misc/1112px-Lucas_Cranach_-_Der_Jungbrunnen_(Gemäldegalerie_Berlin).jpg"
+                alt="A big pool outside with a fountain in the middle and many nude people playing in and around the pool">
+            <button slot="button">Entdecken</button>
+        </discover-card>
+        <slide-show></slide-show>-
+    </main>
+    <footer></footer>
 </body>
+
 </html>

@@ -14,10 +14,13 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/button.css">
+    <link rel="stylesheet" href="./styles/components.css">
     <script src="./components/MainHeader.js" defer></script>
     <script src="./components/TextBlock.js" defer></script>
     <script src="./components/DiscoverCard.js" defer></script>
     <script src="./components/SlideShow.js" defer></script>
+    <script src="./components/InfoCard.js" defer></script>
+    <script src="./components/InfoCardSlider.js" defer></script>
 </head>
 
 <body>
@@ -29,28 +32,181 @@
         </main-header>
     </header>
     <main>
-        <text-block>
-            <p class="paragraph" slot="paragraph">
-                Das Cranach Digital Archive (CDA) ist ein internationales Forschungsprojekt, das sich der Dokumentation
-                und
-                Erforschung der Werke von Lucas Cranach d. Ä. (1472–1553) und seiner Werkstatt widmet. Es bietet eine
-                umfassende digitale Sammlung hochauflösender Bilder, wissenschaftlicher Analysen und historischer
-                Dokumente
-                zu seinen Gemälden. Ziel ist es, Kunsthistorikern, Restauratoren und der Öffentlichkeit einen zentralen
-                Zugang zu detaillierten Informationen über Cranachs Werke zu ermöglichen und den Austausch
-                wissenschaftlicher Erkenntnisse zu fördern.
+        <div class="introduction">
+            <text-block>
+                <p class="paragraph" slot="paragraph">
+                    Das Cranach Digital Archive (CDA) ist ein internationales Forschungsprojekt, das sich der
+                    Dokumentation
+                    und
+                    Erforschung der Werke von Lucas Cranach d. Ä. (1472–1553) und seiner Werkstatt widmet. Es bietet
+                    eine
+                    umfassende digitale Sammlung hochauflösender Bilder, wissenschaftlicher Analysen und historischer
+                    Dokumente
+                    zu seinen Gemälden. Ziel ist es, Kunsthistorikern, Restauratoren und der Öffentlichkeit einen
+                    zentralen
+                    Zugang zu detaillierten Informationen über Cranachs Werke zu ermöglichen und den Austausch
+                    wissenschaftlicher Erkenntnisse zu fördern.
+                </p>
+            </text-block>
+        </div>
+        <div class="devider"></div>
+        <section class="discover-section">
+            <discover-card>
+                <h2 slot="header-2">Gemälde, Archivalien und Literatur</h2>
+                <img slot="image"
+                    src="./assets/images/misc/1112px-Lucas_Cranach_-_Der_Jungbrunnen_(Gemäldegalerie_Berlin).jpg"
+                    alt="A big pool outside with a fountain in the middle and many nude people playing in and around the pool">
+                <button slot="button">Entdecken</button>
+            </discover-card>
+        </section>
+        <div class="devider"></div>
+        <section class="slide-show-section">
+            <slide-show>
+                <!-- TODO: Make adaptive -> switch to list attribute -->
+                <img slot="image-1" class="top" data-image="1" src="./assets/images/04-slide-show/01-image.jpg" alt="">
+                <img slot="image-2" class="oneBehind" data-image="2" src="./assets/images/04-slide-show/02-image.jpg"
+                    alt="">
+                <img slot="image-3" class="twoBehind" data-image="3" src="./assets/images/04-slide-show/03-image.jpg"
+                    alt="">
+                <h2 slot="heading-2">Lucas Cranach</h2>
+                <p slot="paragraph">
+                    Lucas Cranach der Ältere verkörpert die Ideale eines Mannes im Zeitalter der Renaissance, der neben
+                    seiner
+                    Tätigkeit als Maler, Grafiker und Buchdrucker auch als Politiker und Unternehmer tätig war.
+                </p>
+                <a slot="button-left" class="button-left" data-button="left"><img src="./assets/images/arrow-left.svg"
+                        alt=""></a>
+                <a slot="button-right" class="button-right" data-button="right"><img
+                        src="./assets/images/arrow-right.svg" alt=""></a>
+                <a href="" slot="more-info-link" data-link-show-more>mehr erfahren</a>
+            </slide-show>
+        </section>
+        <div class="devider"></div>
+        <section class="info-section">
+            <info-card-slider>
+                <info-card>
+                    <img slot="image" src="./assets/images/05-info-columns/01-image.jpg" alt="Lucas Cranach Portrait">
+                    <h2 slot="title">Lucas Cranach d. Ä.</h2>
+                    <p slot="description">Berühmter Maler der deutschen Renaissance, bekannt für seine Porträts und
+                        religiösen Werke.</p>
+                    <a href="" slot="link-text">mehr erfahren</a>
+                </info-card>
+                <info-card>
+                    <img slot="image" src="./assets/images/05-info-columns/02-image.jpg" alt="Werkstatt Cranach">
+                    <h2 slot="title">Cranach Werkstatt</h2>
+                    <p slot="description">Die Werkstatt produzierte zahlreiche Gemälde und Grafiken, oft mit Hilfe von
+                        Schülern und Söhnen.</p>
+                    <a href="" slot="link-text">mehr erfahren</a>
+                </info-card>
+                <info-card>
+                    <img slot="image" src="./assets/images/05-info-columns/03-image.jpg" alt="Cranach Signatur">
+                    <h2 slot="title">Signatur & Symbolik</h2>
+                    <p slot="description">Die berühmte geflügelte Schlange ist das Markenzeichen Cranachs und findet
+                        sich
+                        auf vielen Werken.</p>
+                    <a slot="link-text" href="">mehr erfahren</a>
+                </info-card>
+            </info-card-slider>
+        </section>
+        <div class="devider"></div>
+        <div class="video-info-section">
+            <img src="./assets/images/06-video-col-text-col/image.png" alt="">
+            <p>Im Oktober 2009 starteten acht Museen in Europa und den USA gemeinsam mit der Stiftung Museum Kunstpalast
+                Düsseldorf und der TH Köln ein Forschungsprojekt zur digitalen Erschließung der Gemälde von Lucas
+                Cranach d. Ä., seinen Söhnen und der Werkstatt. Gefördert von der Andrew W. Mellon Foundation
+                (2009-2019), zielte es darauf ab, Kunstgeschichte, Kunsttechnologie und Informatik zu verbinden. Die
+                Werke wurden interdisziplinär untersucht und über die Plattform CDA frei zugänglich gemacht. Das Projekt
+                diente der Digitalisierung, Erforschung und Vermittlung neuer Erkenntnisse und unterschied sich von
+                klassischen Werkverzeichnissen durch seinen breiteren Ansatz und interdisziplinäre Methodik
             </p>
-        </text-block>
-        <discover-card>
-            <h2 slot="header-2">Gemälde, Archivalien und Literatur</h2>
-            <img slot="image"
-                src="./assets/images/misc/1112px-Lucas_Cranach_-_Der_Jungbrunnen_(Gemäldegalerie_Berlin).jpg"
-                alt="A big pool outside with a fountain in the middle and many nude people playing in and around the pool">
-            <button slot="button">Entdecken</button>
-        </discover-card>
-        <slide-show></slide-show>-
+            <a href="">mehr erfahren</a>
+            <div class="statistics">
+                <div class="statistics-block">
+                    <p>2.570</p>
+                    <p>Gemälde</p>
+                </div>
+                <div class="statistics-block">
+                    <p>1.110</p>
+                    <p>pdf-Dokumente</p>
+                </div>
+                <div class="statistics-block">
+                    <p>4.365</p>
+                    <p>Literatur Nachweise</p>
+                </div>
+                <div class="statistics-block">
+                    <p>1.340</p>
+                    <p>Archiv-dokumente</p>
+                </div>
+                <div class="statistics-block">
+                    <p>1.660</p>
+                    <p>Infrarot-reflekto-gramme</p>
+                </div>
+                <div class="statistics-block">
+                    <p>25.050</p>
+                    <p>hoch-auflösende Abbildungen</p>
+                </div>
+                <div class="statistics-block">
+                    <p>9.400</p>
+                    <p>Textseiten in DE / EN</p>
+                </div>
+                <div class="statistics-block">
+                    <p>800</p>
+                    <p>Röntgen-aufnahmen</p>
+                </div>
+            </div>
+        </div>
+        <div class="devider"></div>
+        <div class="video-section">
+            <img src="./assets/images/08-text-col-video-col/image.png" alt="">
+            <p>Erfahren Sie mehr über Lucas Cranach den Älteren und seine Werkstatt mit: <br /><b>Lucas Cranach der
+                    Ältere und seine Werkstatt - eine Spurensuche</b>
+            </p>
+        </div>
+        <div class="devider"></div>
+        <section class="partners-section">
+            <h2>Unsere Partner</h2>
+            <p>Eine Initiative des Kunstpalasts, Düsseldorf und der Technischen Hochschule Köln in Zusammenarbeit mit
+                über 360 Museen, Forschungseinrichtungen und Kirchengemgemeinden in 35 Ländern.
+            </p>
+            <a href="">mehr erfahren</a>
+            <div class="partners-logos">
+                <img class="deutsche-forschungsgemeinschaft-logo" src="./assets/images/09-partner-section/image-01.jpg" alt="Deutsche Forschungsgemeinschaft Logo">
+                <img class="ernst-von-siemens-kunststiftung-logo" src="./assets/images/09-partner-section/image-02.jpg" alt="Ernst von Siemens Kunststiftung Logo">
+                <img class="leibniz-gemeinschaft-logo" src="./assets/images/09-partner-section/image-03.jpg" alt="Leibniz Gemeinschaft Logo">
+                <img class="mellon-foundation-logo" src="./assets/images/09-partner-section/image-04.jpg" alt="Mellon Foundation Logo">
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer class="homepage-footer">
+        <section class="newsletter-section">
+            <h2>Newsletter</h2>
+            <p>Bleiben Sie mit unserem Newsletter auf dem Laufenden</p>
+            <input type="email" name="newsletter" id="newsletter" placeholder="E-Mail">
+        </section>
+        <section class="info-section">
+            <section class="general-info-section">
+                <h2>Allgemeines</h2>
+                <p>Impressum</p>
+                <p>Leitfaden</p>
+                <p>Nutzungsbedingungen</p>
+                <p>FAQ</p>
+            </section>
+            <section class="discover-more-section">
+                <h2>Entdecken</h2>
+                <p>Archivalien</p>
+                <p>Lucas Cranach</p>
+                <p>Luther</p>
+                <p>Über uns</p>
+                <p>Aktuelles</p>
+                <p>Forschung</p>
+            </section>
+            <section class="contact-section">
+                <h2>Kontakt</h2>
+                <p>Haben Sie Fragen oder Anregungen? Kontaktieren Sie uns ganz einfach über folgenden Link:</p>
+                <a href="">Zum Kontaktformular</a>
+            </section>
+        </section>
+    </footer>
 </body>
 
 </html>

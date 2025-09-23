@@ -1,3 +1,6 @@
+/* 
+############################## Cranach Bio Page ######################################### */
+
 /* Header
 ############################################################################ */
 
@@ -264,9 +267,216 @@ footer {
   }
 }
 
+/* 
+############################## Homepage ######################################### */
+
 /* Article
 ####################################################################### */
 h1 {
   margin-bottom: var(--font-heading-l);
   font: var(--font-heading-l);
+}
+
+/* Video Info Section
+####################################################################### */
+.video-info-section {
+  display: flex;
+  flex-direction: column;
+  font: var(--font-body-m-regular);
+  gap: var(--size-m);
+
+  & a {
+    max-height: min-content;
+    text-decoration: underline;
+
+    &::after {
+      content: url("../assets/images/expand-more.svg");
+      text-decoration: none;
+      vertical-align: -40%;
+    }
+  }
+
+  & .statistics {
+    display: grid !important;
+    width: 100%;
+    margin-top: var(--spacing-l);
+    color: var(--color-white);
+    gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+
+    & .statistics-block {
+      display: flex;
+      overflow: hidden;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: var(--size-m);
+      background-color: var(--color-neutral-900);
+      text-align: center;
+
+      & p:first-child {
+        font: var(--font-body-m-bold);
+      }
+
+      & p:nth-child(2) {
+        font: var(--font-body-s-light);
+      }
+    }
+  }
+}
+
+/* Video Section
+####################################################################### */
+.video-section {
+  display: flex;
+  flex-direction: column;
+  font: var(--font-body-m-regular);
+  gap: var(--size-m);
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  & p {
+    margin-top: var(--size-s);
+  }
+}
+
+/* Partners Section
+####################################################################### */
+.partners-section {
+  font: var(--font-body-m-regular);
+
+  & h2 {
+    margin-bottom: var(--spacing-l);
+    font: var(--font-heading-l);
+  }
+
+  & p {
+    margin-bottom: var(--spacing-m);
+  }
+
+  & a {
+    max-height: min-content;
+    text-decoration: underline;
+
+    &::after {
+      content: url("../assets/images/expand-more.svg");
+      text-decoration: none;
+      vertical-align: -40%;
+    }
+  }
+
+  & .partners-logos {
+    display: grid;
+    margin-top: var(--spacing-l);
+    font: var(--font-body-m-regular);
+    gap: var(--spacing-xs);
+    grid-template-areas:
+      "dfl dfl dfl evsk evsk"
+      "lbg cbg mfg mfg mfg";
+    grid-template-columns: 5fr 1fr;
+
+    & img {
+      max-height: 60px; /* Beispielwert, anpassen nach Bedarf */
+    }
+
+    & .deutsche-forschungsgemeinschaft-logo {
+      width: 180px;
+      grid-area: dfl;
+    }
+
+    & .ernst-von-siemens-kunststiftung-logo {
+      height: 38px;
+      grid-area: evsk;
+    }
+
+    & .leibniz-gemeinschaft-logo {
+      grid-area: lbg;
+    }
+
+    & .mellon-foundation-logo {
+      grid-area: mfg;
+    }
+  }
+}
+
+/* Footer
+####################################################################### */
+.homepage-footer {
+  display: grid;
+  font: var(--font-body-m-regular);
+  gap: var(--size-l);
+  grid-template: "newsletter " 1fr "info" 2fr / 1fr 1fr;
+
+  h2 {
+    font: var(--font-heading-s-semibold);
+  }
+
+  & .newsletter-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-s);
+    grid-area: newsletter;
+
+    & input {
+      padding: var(--spacing-s);
+      border: none;
+      border-bottom: var(--size-xxxs) var(--footer-text-color) solid;
+      background-color: var(--footer-background-color);
+      color: var(--footer-text-color);
+      font: var(--font-body-m-regular);
+    }
+  }
+
+  & .info-section {
+    display: grid;
+    gap: var(--size-l);
+    grid-area: info;
+    grid-template-areas:
+      "general discover"
+      "contact contact";
+    grid-template-columns: 1fr 1fr;
+
+    & > * {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-s);
+    }
+
+    & .general-info-section {
+      grid-area: general;
+    }
+
+    & .discover-more-section {
+      grid-area: discover;
+    }
+
+    & .contact-section {
+      width: 100%;
+      grid-area: contact;
+
+      & a {
+        max-height: min-content;
+        text-decoration: underline;
+
+        &::after {
+          content: url("../assets/images/expand-more.svg");
+          text-decoration: none;
+          vertical-align: -40%;
+        }
+      }
+    }
+  }
+}
+
+/* Devider
+####################################################################### */
+.devider {
+  width: 100%;
+  height: var(--size-xxxs);
+  margin: var(--size-xxxl) 0;
+  background-color: var(--separator-color);
 }

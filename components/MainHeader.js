@@ -8,7 +8,7 @@ template.innerHTML = `
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            font: var(--font-heading-xl);
+            font: var(--font-heading-xxl) !important;
             z-index: 100;
         }
 

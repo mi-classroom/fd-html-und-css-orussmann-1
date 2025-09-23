@@ -64,6 +64,7 @@
     --line-height-loose: 140%;
 
     /* Functional Fonts */
+    --font-heading-xxl: normal var(--font-weight-semibold) 65px/var(--line-height-tight) var(--font-family-sans); 
     --font-heading-xl: normal var(--font-weight-semibold) 52px/var(--line-height-tight) var(--font-family-sans); 
     --font-heading-l: normal var(--font-weight-regular) 32px/var(--line-height-tight) var(--font-family-sans); 
     --font-heading-m: normal var(--font-weight-light) 24px/var(--line-height-tight) var(--font-family-sans); 
